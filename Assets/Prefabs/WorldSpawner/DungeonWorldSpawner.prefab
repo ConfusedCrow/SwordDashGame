@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &766095680814575669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 766095680814575671}
+  - component: {fileID: 766095680814575668}
+  m_Layer: 0
+  m_Name: DungeonWorldSpawner
+  m_TagString: WorldSpawner
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &766095680814575671
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766095680814575669}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.13, y: 0.31, z: -4.31}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &766095680814575668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766095680814575669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 236854e7ae0b93745b2385b35c830415, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 0}
+  playerStats: {fileID: 0}
+  emptyTiles:
+  - {fileID: 1930712220753903765, guid: 085672240c80edb4d9deb83ed6a83897, type: 3}
+  - {fileID: 5733235075442355364, guid: b170ef28ca20dc448b3c06897d53c5d3, type: 3}
+  - {fileID: 4347609635697807113, guid: 9820cfa94be24cf4fa6daf46b57e2b88, type: 3}
+  - {fileID: 9032707093374282204, guid: efd45a3456891e040929fc17a4586a55, type: 3}
+  - {fileID: 3784324852853873838, guid: da5c8b50e730a95439676b53aa68017d, type: 3}
+  dodgeHazardTiles:
+  - {fileID: 7848063662321237127, guid: a632c99830a880a4d9b5e99afef091d9, type: 3}
+  - {fileID: 4680455841765618656, guid: 891f79716df11fb4494148768dbee8a8, type: 3}
+  - {fileID: 5607803581137948083, guid: 3fd7fcb3c9c72e74083c5be153df4a16, type: 3}
+  - {fileID: 7193735376239726619, guid: 68249beeb0ab7ea45bec91ae9f0d6645, type: 3}
+  fightHazardTiles:
+  - {fileID: 5212682741236774051, guid: 9f8f0c65be76c2848bf6d905af2a05fd, type: 3}
+  - {fileID: 1847894814168016578, guid: 7d73d688c11d4fc459b9f9efe1f0a653, type: 3}
+  - {fileID: 3829471994792539582, guid: 359891f2f7e737748a0c437c1999d11e, type: 3}
+  - {fileID: 1885161032343989085, guid: c83564b824943c74faa9b0fc858bb4fc, type: 3}
+  pickupBonusTiles:
+  - {fileID: 1057915259943197256, guid: 5c913ff2070e1ea47bea7a5806aee7f0, type: 3}
+  isInFight: 0

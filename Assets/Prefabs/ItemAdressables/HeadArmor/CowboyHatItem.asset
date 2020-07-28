@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4915968c0f35c744865c3c14d4d7eff, type: 3}
+  m_Name: CowboyHatItem
+  m_EditorClassIdentifier: 
+  itemName: Cowboy
+  itemAdress: Item_CowboyHatHelmet
+  itemSlot: 0
+  itemRarity: 2
+  itemMats:
+  - {fileID: 2100000, guid: ab90a391cab17594495506b0b112ccb5, type: 2}
+  menuSprite: {fileID: 21300000, guid: 2f7c215ea62a67f4bbc8175ea90a6f3b, type: 3}
+  hidesBodypart: 0
+  speedMod: 0.1
+  healthMod: 0
+  armorMod: 0
+  damageMod: 0
+  staggerMod: 0
