@@ -17,165 +17,42 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2712ea7e2b98d8b4bacf761352060249
   m_SerializeEntries:
-  - m_GUID: 06ac70d30a0a7a24b9f904a1e5693852
-    m_Address: Item_LeatherHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 1048c8a1d46915b46bc780a46c7dc33d
-    m_Address: Item_WeaponCurved
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 11fea6b7e78ff454cae2b613fd6671a7
-    m_Address: Item_TophatHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 2a805911ad213d04b85ca35c42232f35
-    m_Address: Item_CoolGloves
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 2be238cf96181c549a48e2d6e0a12d38
-    m_Address: Item_SwiftElvenBoots
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 4789ac9304c686945854456695ac0f6e
-    m_Address: Item_WeaponButcher
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 50d308dacd6863647ba6accc60a2ee7f
-    m_Address: Item_BeardHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 5eae204fb87d5424f86af67b611508c2
-    m_Address: Item_WelderMaskHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
   - m_GUID: 749ac16bda37bbd43833908cab8256d2
     m_Address: DebugInfinit
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 6879064368157346284, guid: 749ac16bda37bbd43833908cab8256d2,
+      type: 3}
+    m_TargetAsset: {fileID: 6879064368157346284, guid: 749ac16bda37bbd43833908cab8256d2,
+      type: 3}
   - m_GUID: 7d14ac0fe72c6d849a7903c9e0eca68b
     m_Address: DebugPlayer
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 862e1ca7661076b4c9250323dd593fcc
-    m_Address: Item_RangerhatHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 89e257d093a0e804c81d8a50ed715503
-    m_Address: Item_WeaponBlueDagger
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 8284274331866554394, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+      type: 3}
+    m_TargetAsset: {fileID: 8284274331866554394, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+      type: 3}
   - m_GUID: 8b89abf5671727c478ec8c244a46f664
     m_Address: DebugWorld
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: 9a6e53c04561a584ba9ca7f2abeed4d5
-    m_Address: Item_WeaponSpear
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: ae82aec7723eb644aaca67102c6ed195
-    m_Address: Item_Weapon_Sword
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: bc411122262868a41a4a5114fe60e9ad
-    m_Address: Item_WeaponMachete
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 6879064368157346284, guid: 8b89abf5671727c478ec8c244a46f664,
+      type: 3}
+    m_TargetAsset: {fileID: 6879064368157346284, guid: 8b89abf5671727c478ec8c244a46f664,
+      type: 3}
   - m_GUID: c463b07f00fafe240aa18b82cf153b84
     m_Address: DungeonWorld
     m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: dc5e1d1f9ae2e7a4b8b65d409ab04239
-    m_Address: Item_CoolShadesHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: ddbaf8c92fcd71f4bbe4a26088e80623
-    m_Address: Item_OpenBrainHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: df3106612e74afa4c80c4f8cb34266ca
-    m_Address: Item_WeaponAxe
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e23dee8a016be404ebc9c72645b93b49
-    m_Address: Item_FullplateHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e356571c1af6ab942a8a65ccf54328b4
-    m_Address: Item_SpikyLeatherHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e4c4f4ba334d4cb429badbe4c1163e93
-    m_Address: Item_ShoulderStrapChest
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: e9483a30d879dbe4d8fa0480b9aa35bb
-    m_Address: Item_CowboyHatHelmet
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: f7a12ac3af73b224a8220383e65a37bb
-    m_Address: Item_WeaponDagger
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
-  - m_GUID: fc70d692d02842d4b872af9fea7b46f7
-    m_Address: Item_HeavyLegs
-    m_ReadOnly: 0
-    m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_SerializedLabels:
+    - default
+    m_MainAsset: {fileID: 766095680814575669, guid: c463b07f00fafe240aa18b82cf153b84,
+      type: 3}
+    m_TargetAsset: {fileID: 766095680814575669, guid: c463b07f00fafe240aa18b82cf153b84,
+      type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
   m_SchemaSet:

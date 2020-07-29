@@ -48,12 +48,11 @@ public class PersistentPlayerState : MonoBehaviour
 
     public ProgressData progressData;
 
-    public Dictionary<string, ItemStats> unlockedItemsByAdress = new Dictionary<string, ItemStats>();
     private string savePath = "/progressData.json";
 
     public bool DEBUG_ResetPreference = false;
     // Start is called before the first frame update
-    async void Start()
+    void Start()
     {
         DontDestroyOnLoad(gameObject);
         if(File.Exists(Application.persistentDataPath + savePath)){
@@ -67,7 +66,6 @@ public class PersistentPlayerState : MonoBehaviour
         }else{
             GetDataFromPrefs();
         }   
-        await LoadItemStatsFromProgress();
         SceneManager.LoadSceneAsync(1);
     }
 
@@ -114,15 +112,7 @@ public class PersistentPlayerState : MonoBehaviour
         File.WriteAllText(Application.persistentDataPath + savePath, progressString);
     }
 
-    async Task LoadItemStatsFromProgress(){ //Loads the players progress as a json from the persistentDataPath.
-        foreach(string item in progressData.unlockedItems){
-            AssetReference itemRef = new AssetReference(item);
-            ItemStats itemData = await itemRef.LoadAssetAsync<ItemStats>().Task;
-            if(itemData != null){
-                unlockedItemsByAdress.Add(item, itemData);
-            }
-        }
-    }
+   
 
     
     public void SaveLevelProgress(float distance){ //Saves the players highest distance in the currently active level
@@ -138,5 +128,13 @@ public class PersistentPlayerState : MonoBehaviour
 
     public float GetProgressOfCurrentLevel(){
         return GetProgressOfLevel(worldSaveSlot);
+    }
+
+    public string[] GetUnlockedItems(){
+        return progressData.unlockedItems.ToArray();
+    }
+
+    public bool GetIsItemUnlocked(string itemID){
+       return progressData.unlockedItems.Contains(itemID);
     }
 }

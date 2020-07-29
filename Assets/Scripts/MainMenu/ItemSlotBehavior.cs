@@ -50,5 +50,6 @@ public class ItemSlotBehavior : MonoBehaviour
 
     public void OnClick(){
         customsMenu.EquipItem(itemData);
+        customsMenu.ExitToCustomizationCanvas();
     }
 }

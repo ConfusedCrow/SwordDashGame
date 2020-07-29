@@ -23,5 +23,5 @@ MonoBehaviour:
   speedMod: 0
   healthMod: 0
   armorMod: 0
-  damageMod: 0
-  staggerMod: 0
+  damageMod: 1
+  staggerMod: -0.2

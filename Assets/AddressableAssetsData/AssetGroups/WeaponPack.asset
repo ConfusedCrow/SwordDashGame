@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: WeaponPack
+  m_EditorClassIdentifier: 
+  m_GroupName: WeaponPack
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a3fa2a8d3d790234d80239f856def8ff
+  m_SerializeEntries:
+  - m_GUID: 1048c8a1d46915b46bc780a46c7dc33d
+    m_Address: Item_WeaponCurved
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: 1048c8a1d46915b46bc780a46c7dc33d, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 1048c8a1d46915b46bc780a46c7dc33d, type: 2}
+  - m_GUID: 4789ac9304c686945854456695ac0f6e
+    m_Address: Item_WeaponButcher
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: 4789ac9304c686945854456695ac0f6e, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 4789ac9304c686945854456695ac0f6e, type: 2}
+  - m_GUID: 89e257d093a0e804c81d8a50ed715503
+    m_Address: Item_WeaponBlueDagger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: 89e257d093a0e804c81d8a50ed715503, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 89e257d093a0e804c81d8a50ed715503, type: 2}
+  - m_GUID: 9a6e53c04561a584ba9ca7f2abeed4d5
+    m_Address: Item_WeaponSpear
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: 9a6e53c04561a584ba9ca7f2abeed4d5, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 9a6e53c04561a584ba9ca7f2abeed4d5, type: 2}
+  - m_GUID: ae82aec7723eb644aaca67102c6ed195
+    m_Address: Item_Weapon_Sword
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: ae82aec7723eb644aaca67102c6ed195, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: ae82aec7723eb644aaca67102c6ed195, type: 2}
+  - m_GUID: bc411122262868a41a4a5114fe60e9ad
+    m_Address: Item_WeaponMachete
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: bc411122262868a41a4a5114fe60e9ad, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: bc411122262868a41a4a5114fe60e9ad, type: 2}
+  - m_GUID: df3106612e74afa4c80c4f8cb34266ca
+    m_Address: Item_WeaponAxe
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: df3106612e74afa4c80c4f8cb34266ca, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: df3106612e74afa4c80c4f8cb34266ca, type: 2}
+  - m_GUID: f7a12ac3af73b224a8220383e65a37bb
+    m_Address: Item_WeaponDagger
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Weapon
+    m_MainAsset: {fileID: 11400000, guid: f7a12ac3af73b224a8220383e65a37bb, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: f7a12ac3af73b224a8220383e65a37bb, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 79da38d06008ba341b8c9a825b06cb4b, type: 2}
+    - {fileID: 11400000, guid: e4eade924a26efd42b417aef83839261, type: 2}

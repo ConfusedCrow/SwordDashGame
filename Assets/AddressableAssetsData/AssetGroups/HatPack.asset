@@ -1,0 +1,121 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: HatPack
+  m_EditorClassIdentifier: 
+  m_GroupName: HatPack
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7ea4468cafaee44408632ffd1365600d
+  m_SerializeEntries:
+  - m_GUID: 06ac70d30a0a7a24b9f904a1e5693852
+    m_Address: Item_LeatherHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 06ac70d30a0a7a24b9f904a1e5693852, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 06ac70d30a0a7a24b9f904a1e5693852, type: 2}
+  - m_GUID: 11fea6b7e78ff454cae2b613fd6671a7
+    m_Address: Item_TophatHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 11fea6b7e78ff454cae2b613fd6671a7, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 11fea6b7e78ff454cae2b613fd6671a7, type: 2}
+  - m_GUID: 50d308dacd6863647ba6accc60a2ee7f
+    m_Address: Item_BeardHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 50d308dacd6863647ba6accc60a2ee7f, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 50d308dacd6863647ba6accc60a2ee7f, type: 2}
+  - m_GUID: 5eae204fb87d5424f86af67b611508c2
+    m_Address: Item_WelderMaskHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 5eae204fb87d5424f86af67b611508c2, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 5eae204fb87d5424f86af67b611508c2, type: 2}
+  - m_GUID: 64efc8b2addc7534e857d60c9163c5bf
+    m_Address: Item_EvilKnightHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 64efc8b2addc7534e857d60c9163c5bf, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 64efc8b2addc7534e857d60c9163c5bf, type: 2}
+  - m_GUID: 862e1ca7661076b4c9250323dd593fcc
+    m_Address: Item_RangerhatHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: 862e1ca7661076b4c9250323dd593fcc, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 862e1ca7661076b4c9250323dd593fcc, type: 2}
+  - m_GUID: b134c77e338617b4882319b2ec7c9e77
+    m_Address: Item_BanditHat
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: b134c77e338617b4882319b2ec7c9e77, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: b134c77e338617b4882319b2ec7c9e77, type: 2}
+  - m_GUID: dc5e1d1f9ae2e7a4b8b65d409ab04239
+    m_Address: Item_CoolShadesHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: dc5e1d1f9ae2e7a4b8b65d409ab04239, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: dc5e1d1f9ae2e7a4b8b65d409ab04239, type: 2}
+  - m_GUID: ddbaf8c92fcd71f4bbe4a26088e80623
+    m_Address: Item_OpenBrainHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: ddbaf8c92fcd71f4bbe4a26088e80623, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: ddbaf8c92fcd71f4bbe4a26088e80623, type: 2}
+  - m_GUID: e23dee8a016be404ebc9c72645b93b49
+    m_Address: Item_FullplateHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: e23dee8a016be404ebc9c72645b93b49, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: e23dee8a016be404ebc9c72645b93b49, type: 2}
+  - m_GUID: e356571c1af6ab942a8a65ccf54328b4
+    m_Address: Item_SpikyLeatherHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: e356571c1af6ab942a8a65ccf54328b4, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: e356571c1af6ab942a8a65ccf54328b4, type: 2}
+  - m_GUID: e9483a30d879dbe4d8fa0480b9aa35bb
+    m_Address: Item_CowboyHatHelmet
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Head
+    m_MainAsset: {fileID: 11400000, guid: e9483a30d879dbe4d8fa0480b9aa35bb, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: e9483a30d879dbe4d8fa0480b9aa35bb, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 92ebac4b2e35a8e4aaa95c34cd0d4150, type: 2}
+    - {fileID: 11400000, guid: c9968bf590db77044a3569ceaa7312f8, type: 2}

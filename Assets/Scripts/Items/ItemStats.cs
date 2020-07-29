@@ -12,7 +12,7 @@ public class ItemStats : ScriptableObject
     //Contains all the relevant information that defines an item
     public string itemName = "Unnamed Item"; //Display name of item, used in the Customization Menu
 
-    public string itemAdress = ""; //
+    public string itemAdress = ""; 
     
     public SlotType itemSlot = SlotType.Head; //Which slot is occupied by this item?
 

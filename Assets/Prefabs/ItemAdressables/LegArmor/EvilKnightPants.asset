@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4915968c0f35c744865c3c14d4d7eff, type: 3}
+  m_Name: EvilKnightPants
+  m_EditorClassIdentifier: 
+  itemName: Evil Knight
+  itemAdress: Item_EvilKnightLegs
+  itemSlot: 3
+  itemRarity: 2
+  itemMats:
+  - {fileID: 2100000, guid: bfe8b50a3fd0f03419d1ecb2dedb6310, type: 2}
+  - {fileID: 2100000, guid: 9556af152040d174dafc0ddfefa2513d, type: 2}
+  - {fileID: 2100000, guid: 6ca2895da34098d4c8cb26e9285ea207, type: 2}
+  - {fileID: 2100000, guid: 93f4e3efcaeac6742b850a1c9d7a2ac9, type: 2}
+  - {fileID: 2100000, guid: b764a0afd76809c4888c6e13eadb3494, type: 2}
+  menuSprite: {fileID: 21300000, guid: e25b31572afb3ba46b687b6475194f3a, type: 3}
+  hidesBodypart: 1
+  speedMod: -0.2
+  healthMod: 0
+  armorMod: 1
+  damageMod: 0
+  staggerMod: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4915968c0f35c744865c3c14d4d7eff, type: 3}
+  m_Name: BanditHatItem
+  m_EditorClassIdentifier: 
+  itemName: Bandit
+  itemAdress: Item_BanditHat
+  itemSlot: 0
+  itemRarity: 1
+  itemMats:
+  - {fileID: 2100000, guid: 5ea910dce291c2f4592292d434c71c05, type: 2}
+  menuSprite: {fileID: 21300000, guid: ceceaa11751038440a91a349c3baf47b, type: 3}
+  hidesBodypart: 0
+  speedMod: 0
+  healthMod: 0
+  armorMod: 0
+  damageMod: 0
+  staggerMod: 0

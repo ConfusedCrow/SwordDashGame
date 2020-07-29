@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: FootPack
+  m_EditorClassIdentifier: 
+  m_GroupName: FootPack
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 4eb741b014ca8e04e9fb2547279d205e
+  m_SerializeEntries:
+  - m_GUID: 215a6500a72224b46a3f8e919cc246c8
+    m_Address: Item_BanditBoots
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Feet
+    m_MainAsset: {fileID: 11400000, guid: 215a6500a72224b46a3f8e919cc246c8, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 215a6500a72224b46a3f8e919cc246c8, type: 2}
+  - m_GUID: 2be238cf96181c549a48e2d6e0a12d38
+    m_Address: Item_SwiftElvenBoots
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Feet
+    m_MainAsset: {fileID: 11400000, guid: 2be238cf96181c549a48e2d6e0a12d38, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 2be238cf96181c549a48e2d6e0a12d38, type: 2}
+  - m_GUID: bedeedd2227b0304890eea3e43dc4537
+    m_Address: Item_EvilKnightBoots
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Feet
+    m_MainAsset: {fileID: 11400000, guid: bedeedd2227b0304890eea3e43dc4537, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: bedeedd2227b0304890eea3e43dc4537, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 47de23e1c077550419e44a7399bb695f, type: 2}
+    - {fileID: 11400000, guid: af0457e65a394d148b003ef182f5e235, type: 2}

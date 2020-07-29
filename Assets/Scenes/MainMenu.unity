@@ -4687,9 +4687,6 @@ MonoBehaviour:
   recordTextOfWorlds:
   - {fileID: 1573813901}
   - {fileID: 545945402}
-  worldAdressByID:
-  - DungeonWorld
-  - DevWorld
 --- !u!1 &540949495
 GameObject:
   m_ObjectHideFlags: 0
@@ -17360,7 +17357,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6546b7bbd037de74aa6154fe0ad4d9b3, type: 2}
+  - {fileID: 2100000, guid: 542bd9284bdea554e9802e3a092b9c66, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

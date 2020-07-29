@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
+using UnityEngine.AddressableAssets;
+using System.Threading.Tasks;
 [System.Serializable]
 class EquipSlotVisuals{
     public Image itemIcon;
@@ -96,51 +98,25 @@ public class CustomizationMenuBehavior : MonoBehaviour
         InitEquipData();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void InitEquipData(){ //Loads all the items needed in the player preview
+        LoadLookFromAdress(playerData.helmetSlotAdress, SlotType.Head);
+        LoadLookFromAdress(playerData.chestArmorSlotAdress, SlotType.Chest);
+        LoadLookFromAdress(playerData.gauntletSlotAdress, SlotType.Hands);
+        LoadLookFromAdress(playerData.legArmorSlotAdress, SlotType.Legs);
+        LoadLookFromAdress(playerData.footArmorSlotAdress, SlotType.Feet);
+        LoadLookFromAdress(playerData.weaponSlotAdress, SlotType.Weapon);
     }
 
-    //Loads all of the currently equipped gear based on the adresses given in the persistent player data
-    void InitEquipData(){
-        if(playerData.helmetSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.helmetSlotAdress]);
+    void LoadLookFromAdress(string adress, SlotType slot){
+        if(adress != ""){
+            AssetReference assetReference = new AssetReference(adress);
+            assetReference.LoadAssetAsync<ItemStats>().Completed += output =>
+            {
+                EquipItem(output.Result);
+            };  
         }else{
-            EmptySlot(SlotType.Head);
+            EmptySlot(slot);
         }
-
-        if(playerData.chestArmorSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.chestArmorSlotAdress]);
-        }else{
-            EmptySlot(SlotType.Chest);
-        }
-
-        if(playerData.gauntletSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.gauntletSlotAdress]);
-        }else{
-            EmptySlot(SlotType.Hands);
-        }
-
-        if(playerData.legArmorSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.legArmorSlotAdress]);
-        }else{
-            EmptySlot(SlotType.Legs);
-        }
-
-        if(playerData.footArmorSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.footArmorSlotAdress]);
-        }else{
-            EmptySlot(SlotType.Feet);
-        }
-
-        if(playerData.weaponSlotAdress != ""){
-            EquipItem(playerData.unlockedItemsByAdress[playerData.weaponSlotAdress]);
-        }else{
-            EmptySlot(SlotType.Weapon);
-        }
-
-        
     }
 
     public void OpenSelectionMenu(int slotNumber){
@@ -148,31 +124,40 @@ public class CustomizationMenuBehavior : MonoBehaviour
         foreach(GameObject obj in spawnedTiles){
             Destroy(obj);
         }
-       
-        RectTransform lastTile = unequipTile;
-        foreach(ItemStats item in playerData.unlockedItemsByAdress.Values){
-            if(item.itemSlot == currentSelectionType){
-                //Spawns a new slot if the item is of the current category and moves it to the next open position either to the right or below the current row
-                ItemSlotBehavior addedSlot = Instantiate(itemSlotPrefab, slotParentTransform).GetComponent<ItemSlotBehavior>();
-                RectTransform addedSlotTransform = addedSlot.GetComponent<RectTransform>();
-                float xOffset = lastTile.GetComponent<RectTransform>().anchoredPosition.x + addedSlotTransform.rect.width + spawnSpacing.x;
-                float yOffset = lastTile.GetComponent<RectTransform>().anchoredPosition.y;
-                if(xOffset > slotParentTransform.rect.width/2f){
-                    xOffset = unequipTile.anchoredPosition.x;
-                    yOffset = addedSlotTransform.sizeDelta.y + (spawnSpacing.y + addedSlotTransform.rect.height)*-1f;
-                }
-                addedSlotTransform.anchoredPosition = new Vector2(xOffset, yOffset);
-                addedSlot.SetData(item);
-                addedSlot.customsMenu = this;
-                lastTile = addedSlotTransform;
-                spawnedTiles.Add(addedSlot.gameObject);
-            }
-        }
+        FillSelectionSlots();
+        
         gameObject.SetActive(false);
         selectionCanvas.SetActive(true);
         
     }
 
+
+    private void FillSelectionSlots(){ //Fills the selection menu with icons based on the current type
+       string slotLabel = currentSelectionType.ToString();
+       RectTransform lastTile = unequipTile;
+       
+       Addressables.LoadAssetsAsync<ItemStats>(slotLabel, null).Completed += objects =>
+        {
+            foreach (ItemStats item in objects.Result){
+                 if(playerData.GetIsItemUnlocked(item.itemAdress)){
+                     //Spawns a new slot if the item is of the current category and moves it to the next open position either to the right or below the current row
+                    ItemSlotBehavior addedSlot = Instantiate(itemSlotPrefab, slotParentTransform).GetComponent<ItemSlotBehavior>();
+                    RectTransform addedSlotTransform = addedSlot.GetComponent<RectTransform>();
+                    float xOffset = lastTile.GetComponent<RectTransform>().anchoredPosition.x + addedSlotTransform.rect.width + spawnSpacing.x;
+                    float yOffset = lastTile.GetComponent<RectTransform>().anchoredPosition.y;
+                    if(xOffset > slotParentTransform.rect.width/2f){
+                        xOffset = unequipTile.anchoredPosition.x;
+                        yOffset = addedSlotTransform.sizeDelta.y + (spawnSpacing.y + addedSlotTransform.rect.height)*-1f;
+                    }
+                    addedSlotTransform.anchoredPosition = new Vector2(xOffset, yOffset);
+                    addedSlot.SetData(item);
+                    addedSlot.customsMenu = this;
+                    lastTile = addedSlotTransform;
+                    spawnedTiles.Add(addedSlot.gameObject);
+                }
+            }    
+        };             
+    }
 
     public void EquipItem(ItemStats item){ 
         if(item == null){
@@ -202,6 +187,9 @@ public class CustomizationMenuBehavior : MonoBehaviour
         playerVisuals.DisplayEquipment(item);
         //Save Selection to the Savefile and return to the main equip screen.
         playerData.SaveDataToPrefs();
+    }
+
+    public void ExitToCustomizationCanvas(){
         selectionCanvas.SetActive(false);
         gameObject.SetActive(true);
     }

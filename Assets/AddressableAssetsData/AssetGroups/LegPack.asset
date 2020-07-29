@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LegPack
+  m_EditorClassIdentifier: 
+  m_GroupName: LegPack
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 61beb4597406a5c4a8abfe42afc14c8a
+  m_SerializeEntries:
+  - m_GUID: 2c3bd5324c2d8a941bb9a6b071ef85b2
+    m_Address: Item_EvilKnightLegs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Legs
+    m_MainAsset: {fileID: 11400000, guid: 2c3bd5324c2d8a941bb9a6b071ef85b2, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: 2c3bd5324c2d8a941bb9a6b071ef85b2, type: 2}
+  - m_GUID: fc70d692d02842d4b872af9fea7b46f7
+    m_Address: Item_HeavyLegs
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Customizables
+    - Legs
+    m_MainAsset: {fileID: 11400000, guid: fc70d692d02842d4b872af9fea7b46f7, type: 2}
+    m_TargetAsset: {fileID: 11400000, guid: fc70d692d02842d4b872af9fea7b46f7, type: 2}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 30c99691574900a448f6076f503a55de, type: 2}
+    - {fileID: 11400000, guid: 4ea18e49fadabb04e8836c3f684c6e7e, type: 2}
