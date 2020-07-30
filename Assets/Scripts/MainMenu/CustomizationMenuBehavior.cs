@@ -11,10 +11,10 @@ class EquipSlotVisuals{
     public Transform effectParent;
 
     public Image[] healthIndicator;
-
     public Image[] armorIndicator;
-
     public Image[] speedIndicator;
+    public Image[] parryTimeIndicator;
+    public Image[] damageIndicator;
 
     //Loads the references to the stat indicators based on their parent transform
     public void AutoFillIndicators(){
@@ -35,6 +35,18 @@ class EquipSlotVisuals{
         armorIndicator = new Image[armorParent.childCount];
         for(int i = 0; i < armorIndicator.Length;i++){
             armorIndicator[i] = armorParent.GetChild(i).GetComponent<Image>();
+        }
+
+        Transform parryTimeParent = effectParent.GetChild(3);
+        parryTimeIndicator = new Image[parryTimeParent.childCount];
+        for(int i = 0; i < parryTimeIndicator.Length;i++){
+            parryTimeIndicator[i] = parryTimeParent.GetChild(i).GetComponent<Image>();
+        }
+
+        Transform damageParent = effectParent.GetChild(4);
+        damageIndicator = new Image[damageParent.childCount];
+        for(int i = 0; i < damageIndicator.Length;i++){
+            damageIndicator[i] = damageParent.GetChild(i).GetComponent<Image>();
         }
     }
 }
@@ -67,6 +79,18 @@ public class CustomizationMenuBehavior : MonoBehaviour
     private Sprite armorSprite;
 
     [SerializeField]
+    private Sprite positiveParryTimeSprite;
+
+    [SerializeField]
+    private Sprite negativeParryTimeSprite;
+
+    [SerializeField]
+    private Sprite positiveDamageSprite;
+
+    [SerializeField]
+    private Sprite negativeDamageSprite;
+
+    [SerializeField]
     private GameObject itemSlotPrefab;
 
     [SerializeField]
@@ -86,25 +110,46 @@ public class CustomizationMenuBehavior : MonoBehaviour
 
     private SlotType currentSelectionType = SlotType.Head;
 
+    [SerializeField]
+    private Transform playerModelSpawnPosition;
+
     // Start is called before the first frame update
     void Start()
     {
         playerData = GameObject.FindGameObjectWithTag("PlayerState").GetComponent<PersistentPlayerState>();
-        playerVisuals = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerVisualsManager>();
         slotParentTransform = unequipTile.transform.parent.GetComponent<RectTransform>();
         foreach(EquipSlotVisuals vis in visualsByType){
             vis.AutoFillIndicators();
         }
-        InitEquipData();
+        LoadPlayerModelAndEquipItems();
     }
 
-    void InitEquipData(){ //Loads all the items needed in the player preview
-        LoadLookFromAdress(playerData.helmetSlotAdress, SlotType.Head);
-        LoadLookFromAdress(playerData.chestArmorSlotAdress, SlotType.Chest);
-        LoadLookFromAdress(playerData.gauntletSlotAdress, SlotType.Hands);
-        LoadLookFromAdress(playerData.legArmorSlotAdress, SlotType.Legs);
-        LoadLookFromAdress(playerData.footArmorSlotAdress, SlotType.Feet);
-        LoadLookFromAdress(playerData.weaponSlotAdress, SlotType.Weapon);
+    void LoadPlayerModelAndEquipItems(){ //Loads the players preview model and adds all of the currently equipped items
+        //Clear old Playermodels
+        while(playerModelSpawnPosition.childCount > 0){
+            Destroy(playerModelSpawnPosition.GetChild(0).gameObject);
+        }
+
+        //Load Player Model Reference
+        AssetReference playerModelRef = new AssetReference(playerData.playerCharacterAdress+"_MM");
+        playerModelRef.LoadAssetAsync<GameObject>().Completed += output =>
+        {
+            //Spawn loaded Model and set new reference
+            GameObject playerModel = Instantiate(output.Result, playerModelSpawnPosition);
+            playerVisuals = playerModel.GetComponent<PlayerVisualsManager>();
+
+            //Equip Items to new model
+            LoadLookFromAdress(playerData.helmetSlotAdress, SlotType.Head);
+            LoadLookFromAdress(playerData.chestArmorSlotAdress, SlotType.Chest);
+            LoadLookFromAdress(playerData.gauntletSlotAdress, SlotType.Hands);
+            LoadLookFromAdress(playerData.legArmorSlotAdress, SlotType.Legs);
+            LoadLookFromAdress(playerData.footArmorSlotAdress, SlotType.Feet);
+            LoadLookFromAdress(playerData.weaponSlotAdress, SlotType.Weapon);
+        };  
+
+         
+
+        
     }
 
     void LoadLookFromAdress(string adress, SlotType slot){
@@ -184,6 +229,8 @@ public class CustomizationMenuBehavior : MonoBehaviour
         SetSlotIcons(relatedVisuals.healthIndicator, item.healthMod, positiveHealthSprite, negativeHealthSprite);
         SetSlotIcons(relatedVisuals.armorIndicator, item.armorMod, armorSprite, null);
         SetSlotIcons(relatedVisuals.speedIndicator, Mathf.FloorToInt(item.speedMod*10), positiveSpeedSprite, negativeSpeedSprite);
+        SetSlotIcons(relatedVisuals.parryTimeIndicator, Mathf.FloorToInt(item.staggerMod*10), positiveParryTimeSprite, negativeParryTimeSprite);
+        SetSlotIcons(relatedVisuals.damageIndicator, item.damageMod, positiveDamageSprite, negativeDamageSprite);
         playerVisuals.DisplayEquipment(item);
         //Save Selection to the Savefile and return to the main equip screen.
         playerData.SaveDataToPrefs();
@@ -222,6 +269,8 @@ public class CustomizationMenuBehavior : MonoBehaviour
         SetSlotIcons(relatedVisuals.healthIndicator, 0, positiveHealthSprite, negativeHealthSprite);
         SetSlotIcons(relatedVisuals.armorIndicator, 0, armorSprite, null);
         SetSlotIcons(relatedVisuals.speedIndicator, 0, positiveSpeedSprite, negativeSpeedSprite);
+        SetSlotIcons(relatedVisuals.parryTimeIndicator,0, positiveParryTimeSprite, negativeParryTimeSprite);
+        SetSlotIcons(relatedVisuals.damageIndicator,0, positiveDamageSprite, negativeDamageSprite);
     }
 
 

@@ -17,42 +17,64 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 2712ea7e2b98d8b4bacf761352060249
   m_SerializeEntries:
+  - m_GUID: 4f1bbc50dd39bc845b1fbd9c32298bd9
+    m_Address: PlayerModel_Zombie
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 5c4a39608c4608645b6869f4468b523c
+    m_Address: PlayerModel_Greg_MM
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 66e629d7b09c8e2409ee2c84ce29b3dd
+    m_Address: PlayerModel_Zombie_MM
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 684797f825692bf46846ed8cd19ed1c5
+    m_Address: Item_WeaponButterKnife
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 749ac16bda37bbd43833908cab8256d2
     m_Address: DebugInfinit
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 6879064368157346284, guid: 749ac16bda37bbd43833908cab8256d2,
-      type: 3}
-    m_TargetAsset: {fileID: 6879064368157346284, guid: 749ac16bda37bbd43833908cab8256d2,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 7d14ac0fe72c6d849a7903c9e0eca68b
-    m_Address: DebugPlayer
+    m_Address: PlayerModel_Greg
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 8284274331866554394, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
-      type: 3}
-    m_TargetAsset: {fileID: 8284274331866554394, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 8b89abf5671727c478ec8c244a46f664
     m_Address: DebugWorld
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 6879064368157346284, guid: 8b89abf5671727c478ec8c244a46f664,
-      type: 3}
-    m_TargetAsset: {fileID: 6879064368157346284, guid: 8b89abf5671727c478ec8c244a46f664,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: c463b07f00fafe240aa18b82cf153b84
     m_Address: DungeonWorld
     m_ReadOnly: 0
     m_SerializedLabels:
     - default
-    m_MainAsset: {fileID: 766095680814575669, guid: c463b07f00fafe240aa18b82cf153b84,
-      type: 3}
-    m_TargetAsset: {fileID: 766095680814575669, guid: c463b07f00fafe240aa18b82cf153b84,
-      type: 3}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: e8c8289d73e62e3498980b40a4605f64
+    m_Address: Item_WeaponLumberAxe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5c867e6831c33054381aa94b7b2b5743, type: 2}
   m_SchemaSet:

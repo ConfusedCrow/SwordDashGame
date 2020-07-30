@@ -28,7 +28,7 @@ public class PersistentPlayerState : MonoBehaviour
     public bool swapInputSides = false;
     public bool flipBlockVerticalInput = false;
 
-    public string playerCharacterAdress = "DebugPlayer";
+    public string playerCharacterAdress = "PlayerModel_Greg";
 
     public string worldSpawnerAdress = "DebugWorld";
     public int worldSaveSlot = 0;
@@ -81,7 +81,7 @@ public class PersistentPlayerState : MonoBehaviour
         swapInputSides = bool.Parse(PlayerPrefs.GetString("SwapSides", "false"));
         flipBlockVerticalInput = bool.Parse(PlayerPrefs.GetString("FlipBlock", "false"));
     
-        playerCharacterAdress = PlayerPrefs.GetString("PlayerCharacterAdress", "DebugPlayer");
+        playerCharacterAdress = PlayerPrefs.GetString("PlayerCharacterAdress", "PlayerModel_Greg");
         helmetSlotAdress = PlayerPrefs.GetString("HelmetAdress");
         chestArmorSlotAdress = PlayerPrefs.GetString("ChestAdress");
         gauntletSlotAdress = PlayerPrefs.GetString("HandsAdress");
