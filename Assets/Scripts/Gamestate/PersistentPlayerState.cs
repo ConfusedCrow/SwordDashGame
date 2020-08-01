@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 [System.Serializable]
 public class ProgressData{
-    public List<string> unlockedItems = new List<string>(){"Item_ShoulderStrapChest", "Item_CoolGloves", "Item_HeavyLegs", "Item_SwiftElvenBoots", "Item_CoolShadesHelmet", "Item_CowboyHatHelmet", "Item_FullplateHelmet", "Item_LeatherHelmet", "Item_OpenBrainHelmet", "Item_RangerhatHelmet", "Item_SpikyLeatherHelmet", "Item_WelderMaskHelmet", "Item_TophatHelmet","Item_BeardHelmet","Item_WeaponAxe","Item_WeaponBlueDagger", "Item_WeaponButcher", "Item_WeaponCurved", "Item_WeaponDagger"};
+    public List<string> unlockedItems = new List<string>(){"Item_ShoulderStrapChest", "Item_CoolGloves", "Item_HeavyLegs", "Item_SwiftElvenBoots", "Item_CoolShadesHelmet", "Item_CowboyHatHelmet", "Item_FullplateHelmet", "Item_LeatherHelmet", "Item_OpenBrainHelmet", "Item_RangerhatHelmet", "Item_SpikyLeatherHelmet", "Item_WelderMaskHelmet", "Item_TophatHelmet","Item_BeardHelmet","Item_WeaponAxe","Item_WeaponBlueDagger", "Item_WeaponButcher", "Item_WeaponCurved", "Item_WeaponDagger", "Item_BanditChest", "Item_EvilKnightChest","Item_BanditBoots","Item_EvilKnightBoots","Item_EvilKnight_Gauntlet","Item_EvilKnightHelmet","Item_BanditHat","Item_BanditPants","Item_EvilKnightLegs","Item_WeaponSpear","Item_WeaponLumberAxe","Item_WeaponButterKnife"};
 
     public float[] progressByLevel = new float[]{0,0};
 

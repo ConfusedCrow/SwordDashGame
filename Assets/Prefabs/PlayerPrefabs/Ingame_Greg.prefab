@@ -1659,7 +1659,7 @@ GameObject:
   - component: {fileID: 518719825421541776}
   - component: {fileID: 5430897418363649373}
   m_Layer: 0
-  m_Name: DebugPlayerCharacter
+  m_Name: Ingame_Greg
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1738,25 +1738,25 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0
       value: 0
-      inSlope: 2824.3616
-      outSlope: 2824.3616
+      inSlope: 3808.8147
+      outSlope: 3808.8147
       tangentMode: 0
       weightedMode: 0
       inWeight: 0
-      outWeight: 0.0651341
+      outWeight: 0.040868454
     - serializedVersion: 3
       time: 1
-      value: 2000
-      inSlope: 1678.8478
-      outSlope: 1678.8478
+      value: 1500
+      inSlope: 315.2904
+      outSlope: 315.2904
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.07024282
+      inWeight: 0.10472542
       outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
-  totalSpeedMod: 0.8
+  totalSpeedMod: 1
   staggerWindow: 0.15
   attackDamage: 1
   healthyHeartSprite: {fileID: 21300000, guid: 5aae2b5a9e430da478bb53ddb026552f, type: 3}

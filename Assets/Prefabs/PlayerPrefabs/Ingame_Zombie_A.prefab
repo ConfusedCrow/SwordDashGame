@@ -57,10 +57,40 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3680a1281cd6c53498ae15bb81824eb3, type: 2}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: speedCurve.m_Curve.Array.data[1].value
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: speedCurve.m_Curve.Array.data[0].inSlope
+      value: 180.65524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: speedCurve.m_Curve.Array.data[0].outSlope
+      value: 180.65524
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: speedCurve.m_Curve.Array.data[0].outWeight
+      value: 0.058748405
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284274331866554390, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
+        type: 3}
+      propertyPath: totalSpeedMod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8284274331866554394, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
         type: 3}
       propertyPath: m_Name
-      value: Ingame_Zombie_A Variant
+      value: Ingame_Zombie_A
       objectReference: {fileID: 0}
     - target: {fileID: 8284274331866554395, guid: 7d14ac0fe72c6d849a7903c9e0eca68b,
         type: 3}
